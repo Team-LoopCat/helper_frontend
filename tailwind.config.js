@@ -14,6 +14,7 @@ export default {
     },
     colors: {
       main: "#FF9900",
+      opacityMain: "rgba(255, 153, 0, 0.15)",
       red: "#EA2E33",
       gray700: "#505050",
       gray600: "#7C7C7C",
