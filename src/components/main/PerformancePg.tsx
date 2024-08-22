@@ -15,13 +15,12 @@ export default function PerformancePg() {
               수행평가를 등록하고 관리해보세요
             </p>
           </div>
-          {/** flex로 인해 변경된 버튼 크기 조절해야 함 */}
-          <button className="font-pretendard font-medium text-[0.9vw] min-w-[7vw] max-h-[3.5vh] rounded-md text-white bg-main">
-            수행평가 등록
-          </button>
+          <div className="flex items-end">
+            <button className="font-pretendard font-medium text-[0.9vw] min-w-[7vw] min-h-[3.5vh] rounded-md text-white bg-main">
+              수행평가 등록
+            </button>
+          </div>
         </div>
-        {/** List 구분 */}
-
         <ul className="flex justify-between items-center font-pretendard font-semibold max-w-[60vw] min-h-[6vh] text-[0.9vw] border-t border-b border-main text-gray700 bg-opacityMain">
           <li className="flex-1 text-center">학년</li>
           <li className="flex-1 text-center">반</li>
@@ -46,7 +45,7 @@ export default function PerformancePg() {
           performanceTitle="프로젝트 수행평가"
           endDay="2024-10-01"
         />
-        
+
         <PerformanceList
           grade={2}
           classroom={2}
@@ -54,7 +53,7 @@ export default function PerformancePg() {
           performanceTitle="프로젝트 수행평가"
           endDay="2024-10-01"
         />
-        
+
         <PerformanceList
           grade={2}
           classroom={2}

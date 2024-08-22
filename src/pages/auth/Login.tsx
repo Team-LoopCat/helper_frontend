@@ -38,9 +38,9 @@ export default function Login() {
 
   return (
     <>
-      <div className="flex min-w-[100vw] min-h-[100vh] items-center justify-center">
+      <div className="flex w-[100vw] h-[100vh] items-center justify-center">
         <img src={AuthBackground} alt="" className="fixed bottom-0 z-0" />
-        <div className="flex flex-col justify-center items-center bg-white gap-10 border border-gray300 min-w-[50vw] h-[70dvh] rounded-3xl z-10">
+        <div className="flex flex-col justify-center items-center bg-white gap-10 border border-gray300 w-[50vw] h-[65vh] rounded-3xl z-10">
           <img src={Logo} alt="It is Logo" />
           <LoginInput
             name="아이디"
@@ -57,15 +57,15 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <div onClick={showPswd} className="absolute top-5 left-[28vw]">
+            <div onClick={showPswd} className="absolute top-[2vh] left-[24.5vw]">
               {pswd.visible ? <OpenEyes /> : <CloseEyes />}
             </div>
           </div>
           <button
             onClick={handleLogin}
-            className={`font-pretendard font-bold text-body2 text-white min-w-[12vw] min-h-14 ${
+            className={`font-pretendard font-bold text-white min-w-[10vw] min-h-[5vh] text-[1vw] ${
               isButtonEnabled ? "bg-main" : "bg-gray300"
-            } rounded-full`}
+            } rounded-3xl`}
             disabled={!isButtonEnabled}
           >
             로그인

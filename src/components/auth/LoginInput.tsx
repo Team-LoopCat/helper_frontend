@@ -18,7 +18,7 @@ export default function LoginInput({ type, value, name, placeholder, onChange }:
         name={name}
         value={value}
         onChange={onChange}
-        className="font-pretendard px-5 w-[30vw] h-input border border-border rounded-xl focus:outline-none focus:border-main focus:delay-200"
+        className="font-pretendard px-5 w-[28vw] h-[6vh] border border-border rounded-xl focus:outline-none focus:border-main focus:delay-200"
         type={type}
         placeholder={placeholder}
       />

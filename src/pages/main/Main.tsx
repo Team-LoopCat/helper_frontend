@@ -58,13 +58,15 @@ export default function Main() {
             />
           </div>
           {/** 로그아웃 버튼 */}
-          <button className="font-pretendard font-semibold text-[0.8vw] text-white max-w-[5vw] min-h-[3.5vh] rounded-md bg-main">
-            로그아웃
-          </button>
+          <div className="flex justify-end">
+            <button className="font-pretendard font-semibold text-[0.8vw] text-white min-w-[5vw] min-h-[3.5vh] rounded-md bg-main">
+              로그아웃
+            </button>
+          </div>
         </aside>
         {/** main을 컴포넌트화 시키기 */}
-        
-          <PerformancePg />
+
+        <PerformancePg />
       </div>
     </>
   );
