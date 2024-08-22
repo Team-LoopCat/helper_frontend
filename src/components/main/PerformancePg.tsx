@@ -3,9 +3,9 @@ import PerformanceList from "./PerformanceList";
 export default function PerformancePg() {
   return (
     <>
-      <main className="flex flex-col min-w-[60vw] min-h-[auto] pt-[9vh] pb-5 right-[9vw] absolute top-20 ">
+      <main className="flex flex-col min-w-[60vw] min-h-[auto] pt-[9vh] absolute top-[7vh] right-[9vw]">
         {/** 수행평가 등록 title(button 포함) */}
-        <div className="flex justify-between">
+        <div className="flex justify-between pb-[2vh]">
           {/** 수행평가 등록 title (button 미포함) */}
           <div>
             <p className="font-pretendard font-bold text-[1.5vw]">
@@ -16,7 +16,7 @@ export default function PerformancePg() {
             </p>
           </div>
           {/** flex로 인해 변경된 버튼 크기 조절해야 함 */}
-          <button className="font-pretendard font-medium text-[0.9vw] min-w-[8vw] max-h-[5vh] rounded-md text-white bg-main">
+          <button className="font-pretendard font-medium text-[0.9vw] min-w-[7vw] max-h-[3.5vh] rounded-md text-white bg-main">
             수행평가 등록
           </button>
         </div>
