@@ -10,7 +10,7 @@ export default {
       body1: 25,
       body2: 20,
       body3: 16,
-      tiny: 14
+      tiny: 14,
     },
     colors: {
       main: "#FF9900",
@@ -21,11 +21,13 @@ export default {
       gray500: "#929292",
       gray400: "#A7A7A7",
       gray300: "#BEBEBE",
+      gray100: "#EBEBEB",
       white: "#ffffff",
       border: "#BEBEBE",
+      opacityDark: "rgba(0, 0, 0, 0.4)",
     },
     fontFamily: {
-      pretendard: ['Pretendard']
+      pretendard: ["Pretendard"],
     },
     width: {
       landingButton: 250,
@@ -38,4 +40,4 @@ export default {
   },
   plugins: [],
   mode: "jit",
-}
+};
