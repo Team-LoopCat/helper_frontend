@@ -32,7 +32,7 @@ export default function Login() {
   const isButtonEnabled = username !== "" && password !== "";
 
   const handleLogin = () => {
-    if (username !== "" && password !== "") navigate("/main");
+    if (username !== "" && password !== "") navigate("/performance");
     else console.error("Can't login");
   };
 
