@@ -1,6 +1,13 @@
-import PerformanceList from "./PerformanceList";
+import { useNavigate } from "react-router-dom";
+import PerformanceList from "./List";
 
 export default function PerformancePg() {
+
+  const navigate = useNavigate();
+
+  const PerformanceRegisterMove = () => {
+    navigate('/PerformanceRegister')
+  }
   return (
     <>
       <main className="flex flex-col min-w-[60vw] min-h-[auto] pt-[9vh] absolute top-[7vh] right-[9vw]">
@@ -16,7 +23,7 @@ export default function PerformancePg() {
             </p>
           </div>
           <div className="flex items-end">
-            <button className="font-pretendard font-medium text-[0.9vw] min-w-[7vw] min-h-[3.5vh] rounded-md text-white bg-main">
+            <button onClick={PerformanceRegisterMove} className="font-pretendard font-medium text-[0.9vw] min-w-[7vw] min-h-[3.5vh] rounded-md text-white bg-main">
               수행평가 등록
             </button>
           </div>
@@ -45,15 +52,6 @@ export default function PerformancePg() {
           performanceTitle="프로젝트 수행평가"
           endDay="2024-10-01"
         />
-
-        <PerformanceList
-          grade={2}
-          classroom={2}
-          subject="자바프로그래밍"
-          performanceTitle="프로젝트 수행평가"
-          endDay="2024-10-01"
-        />
-
         <PerformanceList
           grade={2}
           classroom={2}
